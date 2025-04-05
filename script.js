@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (div1) {
     div1.addEventListener('click', function () {
       // Redirigimos a 'div1.html' al hacer clic en 'box box1'
-      window.location.href = 'jugar.html';
+      window.location.href = 'game.html';
     });
   }
 

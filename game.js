@@ -9,7 +9,7 @@ const config = {
   },
   physics: {
     default: 'arcade',
-    arcade: { debug: true }
+    arcade: { debug: false }
   }
 };
 
@@ -103,7 +103,8 @@ function create() {
 
   // Evento para ataque
   this.input.keyboard.on('keydown-SPACE', () => {
-    if (!player.anims.isPlaying) { // Evitar interrumpir animaciones en curso
+    // Solo se reproduce la animación de ataque si no se está reproduciendo otra animación
+    if (!player.anims.isPlaying || player.anims.currentAnim.key !== 'atacar') { 
       player.anims.play('atacar', true);
 
       // Destruir sombras dentro del rango al atacar
@@ -252,4 +253,3 @@ function restartGame(scene) {
   gameOverText.setVisible(false);
   restartText.setVisible(false);
 }
-  
