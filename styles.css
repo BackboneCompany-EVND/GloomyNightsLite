@@ -1,0 +1,112 @@
+/* Reset de márgenes y padding para evitar problemas */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #242222;
+}
+.div-image, .div-jugar-image,.div-controles, .div-creditos{
+  width: 1200px;
+  height: 700px;
+  background-size: cover; /* La imagen cubre todo el div */
+  background-position: center; /* Centra la imagen dentro del div */
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+}
+.div-image {
+  background-image: url('media/menu.gif'); /* Ruta de la imagen gif */
+}
+/*Backgrounds del menu*/
+.div-jugar-image{
+  background-image: url('media/usuario.png'); /* Ruta de la imagen gif */
+}
+.div-controles{
+  background-image: url('media/controlesBackground.png'); /* Ruta de la imagen gif */
+}
+.div-creditos{
+  background-image: url('media/creditosBackground.png'); /* Ruta de la imagen gif */
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 33px;
+  padding: 1px;
+  margin: 216px 0px 0px 0px;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*Botones del menu principal*/
+.box1 {
+  width: 151px;
+  height: 70px;
+}
+.box2 {
+  width: 264px;
+  height: 82px;
+}
+.box3 {
+  width: 222px;
+  height: 80px;
+}
+.box1:hover, .box2:hover, .box3:hover {
+  cursor: pointer;
+}
+/*Jugar pagina*/
+.start-screen{
+  display: flex;
+  flex-direction: column; /* Organiza los elementos de manera vertical */
+  justify-content: center; /* Centra los elementos verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
+  height: 100vh; /* Utiliza el 100% de la altura de la ventana del navegador */
+  text-align: center; /* Centra el texto dentro de los elementos */
+  gap: 20px; /* Espacio entre los divs */
+  padding: 20px;
+}
+.boxRegresar{
+  width: 100px;
+  height: 90px;
+  background-image: url('media/regresarBoton.png'); /* Ruta de la imagen gif */
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+#name-input{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 250px;
+}
+#name-submit-button{
+  border: none; 
+  padding: 14px 28px; 
+  cursor: pointer; 
+  border-radius: 5px; 
+}
+#start-button{
+  padding: 20px;
+    font-size: 20px;
+    display: inline-block;
+    border-radius: 21px;
+    background: red
+}
+/*Creditos página*/
+.boxRegresarCreditos{
+  width: 100px;
+  height: 90px;
+  cursor: pointer;
+  margin: 451px 0px 0 724px
+}
+
+
